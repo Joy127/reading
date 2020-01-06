@@ -1,0 +1,95 @@
+body{   
+    /* margin:0px;  */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/1.jpg);   
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;    
+    font-family: var(--font-family-sans-serif), 'Microsoft JHengHei';
+    overflow:auto;
+
+}
+
+.carousel-item{
+    height: 600px;
+}
+
+.carousel-caption{
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,1);
+}
+
+.object-fit{
+    object-fit: cover;
+    object-position:center;
+}
+
+#loading{
+    height:100vh;
+    position: fixed;
+    z-index: 999;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+#content,#footer{
+    display:none;
+}
+
+
+@media (min-width:768px){     
+    .table tbody td:first-child{       
+        width:20%;        
+    }
+    .table tbody td:nth-child(2){       
+        width:10%;
+    }
+    .table tbody td:nth-child(3){       
+        width:10%;
+    }
+    .table tbody td:nth-child(4){       
+        width:10%;
+    }
+    .table tbody td:nth-child(5){       
+        width:10%;
+    }      
+    .table tbody td:last-child{       
+        width:30%;
+    }
+}
+
+
+
+
+@media (max-width:768px){
+    .table td{
+        display:block;
+    }
+    .table tr{
+        display:block;      
+    }
+    .table thead{
+      display:none;
+    }
+    .table tbody td:before{
+        content:attr(scope)":";
+        color:var(--warning);
+        font-weight:bold;
+        width:100%;
+    }
+    .table tbody td:last-child{       
+        width:100%;
+    }
+}
+
+
+
+
+
+.item .img-fluid{
+    width: 100%;
+    margin:auto;
+}

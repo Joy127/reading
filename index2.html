@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154754488-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154754488-2');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>親子共讀</title>
+    <meta name="title" content="親子共讀">
+    <meta name="description" content="OPEN BOOKS , OPEN THE WORLD!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="親子共讀">
+    <meta property="og:description" content="OPEN BOOKS , OPEN THE WORLD!">
+    <meta property="og:image" content="./img/1.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="親子共讀">
+    <meta property="twitter:description" content="OPEN BOOKS , OPEN THE WORLD!">
+    <meta property="twitter:image" content="./img/1.jpg">
+    <!-- link -->
+    <link rel="shortcut icon" href="./img/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/book1.png" width="30" height="30" class="d-inline-block">
+                親子共讀
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i> 首頁
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <!-- add dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-book"></i> 教育資源
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./od1.php">繪本花園</a>
+                            <a class="dropdown-item" href="./od2.php">主題動畫</a>
+                            <a class="dropdown-item" href="./od3.php">有聲書</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-info-circle"></i> 參考資訊
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./chart.php">統計資料</a>
+                            <a class="dropdown-item" href="./library.php">公立圖書館</a>
+                            <a class="dropdown-item" href="./activity.php">藝文活動</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- loading -->
+    <div class="container-fluid" id="loading">
+        <div class="row h-100">
+            <div class="col-12 align-self-center text-center">
+                <img src="./img/loading.svg">
+            </div>
+        </div>
+    </div>
+
+    <!-- 輪播區 -->
+    <div class="container" id="content">
+        <div class="row swing wow">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/18_1.jpg" class="d-block w-100 h-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>悅讀樂趣多</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/8_1.jpg" class="d-block w-100 h-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>學會閱讀 孩子不寂寞</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/13_1.jpg" class="d-block w-100 h-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>培養孩子的專注力 從閱讀開始</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 圖文區 -->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 my-3 ">
+                <h1 class="text-center text-white">親子共讀</h1>
+                <hr class="bg-white">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6 my-3">
+                <div class="card">
+                    <img src="./img/9_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">愛 從說故事開始</h5>
+                        <p class="card-text">
+                            「親子共讀」最重要的意義不在於「讀」而是在這個「共」字，也就是大人的陪伴。共讀是一種省時省力的教養方式，從生活學習、行為規範、情緒疏導、到文化價值和人生信仰，都在有趣的共讀中，自自然然的傳遞了。當孩子依偎在父母懷抱中閱讀時，他所感受到的不只是故事內容帶來的想像空間，最重要的是父母擁抱他所帶來的安全感。
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong1">
+                            MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 my-3">
+                <div class="card">
+                    <img src="./img/11_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">陪伴共讀的你 是孩子最好的玩具</h5>
+                        <p class="card-text">
+                            如果家長多用傳統玩具陪孩子玩耍並常朗讀故事給寶寶聽，寶寶就會接觸到更多的單詞。實際上，寶寶並不需要昂貴的玩具，家長可以提供家中就有的鍋碗瓢盆，玩“捉迷藏”的毯子以及盛有水或米的小盒子等，或者隨身一本有趣的童書，或者可操作的玩具書感官書等，都能讓家長發揮想像力多講話，邊陪寶寶玩邊促進寶寶語言發展的絕佳工具。
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong2">
+                            MORE
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 my-3">
+                <div class="card">
+                    <img src="./img/16_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">說話是本能 閱讀是習慣</h5>
+                        <p class="card-text">
+                            既然是習慣就要從小培養，如果自己隨時隨地身上帶本書，有空就拿起來看，孩子自然也會有樣學樣，拿起書來看了。父母影響孩子最有力的時期就是啟蒙期，因為那個時候的主要學習機制是模仿，同時也是孩子最崇拜父母的時候。孩子有動機學得最快，所以我們常在外國的火車上看到父母子女各自拿著自己喜歡的書在看，車廂內一片安靜祥和。
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong3">
+                            MORE
+                        </button>
+                    </div>
+                </div>
+            </div>        
+
+        <div class="col-sm-6 my-3">
+            <div class="card">
+                <img src="./img/15_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">閱讀使你站上巨人的肩膀</h5>
+                    <p class="card-text">
+                        一個人的生命有限，如果沒有前面無數人的努力，我們今天不可能坐在這裡享受這麼進步的科技文明。面對二十一世紀資訊爆炸唯一的武器，便是閱讀──在最短的時間內吸取別人研究的成果。閱讀是目前所知唯一可以替代經驗使個體取得知識的方法（這裡所指的知識是已被內化，隨時可以取用的東西）。
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4">
+                        MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+
+    <!-- 頁尾版權區 -->
+    <div class="container-fluid bg-info text-white text-center " id="footer">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./od1.php">
+                            <i class="fas fa-book"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./chart.php">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <h5>
+                    &COPY;JOY |
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> 泰山網頁班習作
+
+                </h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 1-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154754488-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154754488-2');
+</script>
+
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">愛 從說故事開始</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>我是一位小兒科醫師，很自然的在門診很多家長都來問：吃什麼才會讓孩子長得壯長得好？可是身為小兒科醫師和一位認真母親的我，卻希望分享我的經驗和我所知道的科學知識，告訴家長什麼樣的教養方式才會讓孩子在快樂的環境中，成長為身心健康成熟、具備挑戰能力的人？
+                    </p>
+
+                    <p>因為如果我們在乎孩子吃什麼喝什麼可以身體強壯，那麼餵養孩子頭腦和心靈的食物，就應該要更謹慎給予。我相信這樣的經驗分享是我當小兒科醫師的一個職責。</p>
+
+                    <p>2006年天下雜誌的教育專刊提出專論：全球化下的關鍵能力。專文探討父母要如何讓孩子快樂、自信的學習？而哪些能力才是孩子面對全球化所需要的關鍵能力？文中提到學習的四大支柱，分別為學習知的能力、學習動手作、學習與他人相處以及學習自我實現。
+                    </p>
+
+                    <h4>早期親子共讀是”全腦”開發的起點</h4>
+                    <p>第一個關鍵能力「學習知的能力」就是要學習基本知識與技能，而唯有透過閱讀，才能全面啟動學習的潛能，因為閱讀能力之重要，在於它是通往其它能力的大門，而且需要趁早打好基礎。</p>
+
+                    <p>陽明神經科學研究所所長洪蘭教授指出：「嬰兒出生後腦細胞數目即不再增加，反而是逐漸消減沒有與其他神經原相連的細胞，所以現今「智慧」的定義已變成「神經連結的密度」，因此透過大量閱讀，建立常識累積學識之後，便可以觸類旁通，神經才會越連越密集，腦袋也更靈光。臺灣有很多父母不認為孩子需要看課外書，但是接觸不同領域的書藉，其實就是在建立大腦的連結網路。科學研究已發現，閱讀是教育與學習的核心。學校的每一門科目都要經由閱讀而學習，連數理科也不例外，學童必須先看得懂數學應用題的題意才能開始解題。」
+                    </p>
+
+                    <p>臺灣許多父母都怕孩子”輸在起跑點”，而花費金錢時間跟著坊間所謂專家學者的各種”全腦”開發的課程起舞。可是縱觀全球教育的趨勢，卻發現早期的親子共讀才是”全腦”開發起跑點。因為透過腦部研究的新科技，科學家告訴我們，幼兒時期日常生活中的各種語言活動，對於幼兒的智力發展非常重要。
+                    </p>
+
+                    <p>嬰兒剛出生時對聲音的敏感度最高，當父母對孩子說故事、唱歌、說話、朗讀時，會刺激孩子的大腦發育。正因為如此，先進國家在推動教育時，都強調要早期為孩子朗讀故事書，越早越好。</p>
+
+                    <p>全球性的成人能力調查中發現，閱讀能力的高低，與個人未來學習、就業、甚至經濟發展息息相關。所以當今最具競爭力的國家，無不針對閱讀投入大量的資源與規劃。</p>
+
+                    <h4>親子共讀給孩子安全感 為未來發展奠定基礎</h3>
+                    <p>雖然經過教育界長期追蹤，從小閱讀的兒童，其學習能力發展比沒有從小閱讀的兒童好，但我最想和家長們分享有關親子共讀的好處是「給孩子安全感」。</p>
+
+                    <p>因為「親子共讀」最重要的意義不在於「讀」而是在這個「共」字，也就是大人的陪伴。當爸媽摟抱著孩子唸故事書時，孩子聽到的是父母親對他的愛，孩子感受到的是父母擁抱他所帶來的安全感。這份愛和安全感都有助於替孩子未來的各種發展奠定穩固的基礎。
+                    </p>
+
+                    <p>學者強調：「早期共讀並不是要父母如何教孩子讀書，而在鼓勵親子以沒有壓力的方式，享受閱讀樂趣。」
+                        師大人類發展與家庭學系黃迺毓教授指出：「原來共讀是一種省時省力的教養方式，從生活學習、行為規範、情緒疏導、到文化價值和人生信仰，都在有趣的共讀中，自自然然的傳遞了。」洪蘭教授也說「當孩子依偎在父母懷抱中閱讀時，他所感受到的不只是故事內容帶來的想像空間，最重要的是父母擁抱他所帶來的安全感。」
+                    </p>
+
+                    <p>因此洪蘭教授一直不斷到各學校去推廣親子共讀，因為科學的研究早已顯示，和照顧者互動良好的孩子比較能因應日常生活中的壓力和失望，並從中學習。</p>
+
+                    <p>可見得親子共讀不但影響孩子的智力發展，更是孩子在漫長的成長過程中，培養健全人格所必須的要素。在學校教育功能不彰而強調家庭教育的現今社會，我相信，親子共讀更是父母親送給孩子最好的禮物。
+                    </p>
+
+                    <p>我在照顧自己的孩子時，由於閱讀原本就是我的最愛興趣，很自然的從孩子出生後”唸故事書”就成為我和孩子最喜歡的互動方式。隨著孩子慢慢長大，我發現孩子雖然年紀小，但也很自然的成為一個小書蟲，更棒的是，當我讀到洪蘭教授所推廣的「腦部與閱讀」的機制時，發現原來我已經送給我的孩子最好的禮物「閱讀的興趣」。
+                    </p>
+
+                    <h4>親子共讀是與子女通溝最好的方法之一</h4>
+                    <p>若家中已有比較大的孩子，親子共讀仍然是教養孩子最好的方式。因為親子共讀，在一個共字。為什麼孩子喜歡和家長一起做遊戲，一起看電視，實際上是家長在這些活動中也找到了樂趣，不知不覺地投入了進去。家長的投入反過來會感染孩子，激發孩子的興趣。有許多父母常常不知道如何與自己的子女溝通，而親子共讀就是最好的方法之一。一本書就是一個橋樑，一個故事可以引申出很多話題，孩子在輕鬆愉快地讀書過程中對自己的想法和評價不再掩飾，日後碰到問題時也樂於向父母求教。全家人不分年齡大小，彼此分享閱讀的心得，在輕鬆的故事時光裡，一方面提高了孩子的語言能力，父母的知識面也可以逐漸擴大，何樂而不為呢？
+                    </p>
+
+                    <p>文章來源：http://www.twror.org/愛-從說故事開始/</p>
+                    <p>文章作者：吳淑娟醫師 / 羅東博愛醫院兒科主治醫師</p><br>
+                </div>
+
+                <div class="modal-footer text-left">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 2-->
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">陪伴共讀的你，是孩子最好的玩具!</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+
+                    <p>玩，是每個孩子需要的成長元素。但是玩些甚麼才好，或者要花費多少金錢買玩具才會好玩? 在3C電子產品充斥的時代裡，不少家長從孩子還是嬰幼兒階段，就開始提供價格昂貴的電子玩具給寶寶，例如可觸碰螢幕的平版電腦和手機，或有聲光刺激的情境玩具(例如農場裡有可發出英文名字的動物按鈕)，以為這些玩具能幫助孩子學習，孩子觸碰這些按鈕時跟著發出的聲音或動作，還會得到大人的稱讚。或者，因為家長工作繁忙和被家務瑣事困住等壓力，父母可能別無選擇，只能讓嬰幼兒玩電子產品以便孩子可以獨處一段時間。但是，不少論文都表明，若沒有大人的陪伴，小小孩無法透過使用電子媒體而自己學會詞彙，且發現對幼兒發展有負面的影響。</p>
+
+                    <p>給小小孩玩這些電子產品帶來的實際影響如何? 2016年美國兒童發展學者和兒科醫師共同發表一項研究結果，觀察電子玩具對嬰幼兒發展的影響。</p>
+
+                    <p>此研究共有26對10-16個月大的寶寶和其家長參加。研究團隊提供每對親子三套玩具，請家長以自然的態度陪伴孩子玩這些玩具，同時錄影記錄親子互動時的語言和行為。這三組玩具包括第一組是電子玩具，有可觸碰式螢幕的寶寶電腦，會發出聲音的農場玩具和嬰兒手機。第二組是傳統玩具，如木製拼圖，形狀分類玩具，有圖片的橡膠積木，第三組則有5本厚紙板童書。</p>
+                    
+                    <h4>不同類型的玩具，原來影響這麼大</h4>
+                    <p>觀察結果以家長陪孩子玩玩具時，每分鐘說出的單詞量(WPM)來看有無差異。結果發現玩不同玩具時產生的WPM有極大的差異，例如，念故事書時，家長平均的WPM是66.89；玩傳統玩具時，家長的平均數是55.5​​6 WPM，但是當玩電子玩具時，家長的平均只有39.62 WPM。若加入行為觀察，研究觀察到當陪孩子玩電子玩具時，家長除了較少講話，和嬰兒之間的口語交流以及給孩子的回應也較少。而與玩傳統玩具相比，嬰兒玩聲光電子玩具時，發出的聲音更少，也更少說話。親子共讀時，親子之間的言語交流和互動則是最多的。</p>
+
+                    <p>這些差異使研究人員得出結論，認為在陪伴孩子玩的玩具類型，原來會影響「孩子聽到的單詞的量和質，且有顯著性差異。」</p>
+
+                    <p>為何會有此種差異，研究者指出，這些具聲光刺激的電子玩具，會激發寶寶的定向反射，很容易吸引孩子的注意力。但這種原始的定向反射會迫使孩子將注意力集中在新穎的視覺或聽覺刺激上，實際上會影想寶寶融入周圍的真實世界，反而使寶寶無法有有意義且充分的探索機會去學習。研究人員更進一步建議「不應該鼓勵嬰兒玩電子玩具」。</p>
+
+                    <h4>提供甚麼樣的玩具最好呢?</h4>
+                    <p>那麼，可以提供甚麼樣的玩具陪寶寶玩呢? 學者鼓勵父母在陪伴寳寳玩耍時應選擇可以促進語言交流和發展互動的傳統玩具和唸故事書。</p>
+                    
+                    <p>大部分嬰兒滿一歲生日時，已經聽熟了說母語所需的所有發音和音節，玩耍則是提供寶寶學習「講話」這個新技能的好方式。而父母在陪伴孩子玩耍時提供孩子所需的單詞量，扮演非常重要的角色。如果家長多用傳統玩具陪孩子玩耍並常朗讀故事給寶寶聽，寶寶就會接觸到更多的單詞。實際上，寶寶並不需要昂貴的玩具，家長可以提供家中就有的鍋碗瓢盆，玩“捉迷藏”的毯子以及盛有水或米的小盒子等，或者隨身一本有趣的童書，或者可操作的玩具書感官書等，都能讓家長發揮想像力多講話，邊陪寶寶玩邊促進寶寶語言發展的絕佳工具。</p>
+                    
+                    <p>許多研究也證實，在陪伴玩耍過程中父母和孩子的對話比單純教單詞更重要。玩耍時孩子們會自然的學到語言的運用，有助於發展詞彙量，聽力技巧，以及遵循指示的能力，這些對話還可以為寳寳奠定未來讀寫能力的基礎。這些益處從玩傳統玩具中可得到，例如透過角色扮演可增加想像力，探索和解決問題能力。有創造力的孩子可以隨時提出不一樣的解決方案，並樂於跟隨好奇心做更多思考。在遊戲過程中，孩子們學會冒險並體驗犯錯的經驗，也為孩子提供一個表達所有奇妙想法的機會；積木和拼圖等玩具，可以幫助發展空間智力，這對於以後學習數學很重要；玩的過程中還可以學習到社交技巧，例如輪流，接受和尊重他人的指示。遊戲是兒童體驗自己的世界和他人世界的鏡面。</p>
+
+                    <p>對於父母來說，與孩子一起玩耍為家長提供了一個窗口，讓他們了解孩子的成長階段，可以與孩子充分互動。而若家長能以對話式共讀方式，和孩子一起進入一本有趣的故事書情境中，也能夠達到以上傳統玩具給孩子的發展刺激!</p>
+                    
+                    <h4>最好玩的玩具，原來是家長</h4>
+                    <p>但若嬰幼兒常玩電子玩具，除了減少父母與孩子之間口語互動，也代表著原本透過玩耍可獲得的各種益處會變少，可能會導致幼兒的感官問題和情緒問題增加。其實，孩子發展中需要的是父母在遊戲過程中的柔和聲音，溫柔的接觸，愛心的凝視，這些都將在孩子的大腦上留下深刻的發展痕跡，能積極促進情緒發展。玩耍可以創造歡樂，親密，自尊和開放思考能力。</p>
+                    
+                    <p>學者說：“一個沒有透過玩耍得到刺激的孩子，可能無法完全連接以後學習所需的神經傳導和途徑。</p>
+
+                    <p>各位親愛的家長朋友，您實際上就是寶寶最適合最好的玩具。而學者發現，您和孩子的各種互動中，仍以童書和親子共讀，能讓孩子得到最多單詞的質與量刺激，以及好的親子互動！</p>
+                    
+                    
+                    <p>文章來源：http://www.twror.org/陪伴共讀的你，是孩子最好的玩具!/</p>
+                    <p>文章作者：吳淑娟醫師 / 羅東博愛醫院兒科主治醫師</p><br>
+                </div>
+
+                <div class="modal-footer text-left">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 3-->
+    <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">說話是本能 閱讀是習慣</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>孩子的學習，需要時間的等待</h4>
+
+                    <p>家中生養男孩的爸媽，相信都曾為了兒子說話的能力比同班女生還慢而感到困惑的經驗。針對這點，洪蘭老師指出：女生比男生還早熟的證據不只表現在身高體型上，也藏在腦袋裡。</p>
+
+                    <p>女生的大腦因為發展速度比男生快，所以，語言能力自然也就比同齡的男生好。不過，男生大約到了國中階段開始發育後，就會迎頭趕上，所以父母其實不用太擔心。「有的時候孩子並不是比較笨、比較偷懶，他只是比較『慢熟』；時間到了，他自然能夠展現能力，根本無須揠苗助長。」洪蘭老師如此提醒爸媽。</p>
+
+                    <p>另外，從一對11個月大的同卵雙胞胎學走路的實驗，也能說明腦與學習的關係。實驗中，只單獨讓雙胞胎哥哥每天學習走路5分鐘，因此，到了13個月大，哥哥已經會走路，弟弟還不會；但是到了15個月大時，實驗者卻發現雙胞胎兄弟兩人走得一樣好。「這就如同逼迫還在幼兒園的孩子就學寫字一樣。其實，只要讓孩子自然成長，等時間到了，再去學習，才能學得快樂。」洪蘭老師以大腦結構與發展的關係，直指等孩子成熟對學習的重要。</p>
+
+                    <h4>因材施教，沒有不可教的孩子</h4>
+
+                    <p>去美國開神經學會時，洪蘭老師曾在會場的牆上看見「孩子沒有學好，是因為老師沒有教對！」這句話，非常切中他一直堅信的概念：只要因材施教，沒有不可教的孩子。她認為：教學一定要符合學生的興趣，只要引起動機，沒有學生不願意學習的。</p>
+
+                    <p>她提到兒子就讀11年級時，文學老師要求孩子必須讀莎士比亞的四個喜劇與四個悲劇，兒子抽到《羅密歐與茱麗葉》，老師要他們改編成21世紀發生在紐約的現代版愛情故事。為了這場戲，兒子除了努力讀懂古英文，為了轉換成貼近紐約年輕人的用語，還特地去買饒舌專輯學RAP。在改寫的過程中，透過消化、重組，不知不覺中把莎士比亞的名句都讀進心裡了。因此，洪蘭老師很肯定的說：「所有的孩子都可教，就看教的方式。」</p>
+
+                    <h4>說話是本能，閱讀習慣需要培養</h4>
+
+                    <p>談到與學習息息相關的閱讀行為，洪蘭老師再三強調：「說話是本能，閱讀是習慣。」因為人類的大腦雖擁有「語言中心」，卻沒有「閱讀中心」，所以一個孩子若身處正常環境中，即使沒有人教他說話，他仍會說話；倘若沒有人教他閱讀，他就會成為文盲。</p>
+
+                    <p>如果能閱讀自己有興趣的主題，閱讀習慣會更容易養成。洪蘭老師回想起當年在美國唸書時，由於攻讀的是自己非常有興趣的學科，因此即使唸完博士後，近視已經從250度暴增到900度，雖然眼睛很累了，還是很想讀。因為她真正感受到了閱讀的樂趣。</p>
+
+                    <p>洪蘭老師認為，讓孩子愛上閱讀是非常重要的事。她強調，閱讀不是課堂上的事，是生活中每天發生的事情。以新加坡為例，他們打從0歲就開始推廣「悅讀」活動。為了把孩子帶進閱讀的世界，他們利用輕鬆愉快的方式進行。一、二年級的課本都是圖畫書、童話，方便講演故事給孩子聽，這是“Learn to Read”（學會閱讀）；等孩子都喜歡閱讀之後，三年級的課本再改成文字為主，圖片為輔，這時候就是“Read to Learn”（從閱讀中學習），讓孩子以閱讀能力當鑰匙，打開知識的大門。</p>
+                        
+
+                    <p>文章來源：http://parent.kimy.com.tw/new/keyArticle.aspx?art_id=28&g_id=3</p>
+                    <p>文章作者：洪蘭教授</p><br>
+                </div>
+
+                <div class="modal-footer text-left">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 4-->
+    <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLongTitle">閱讀使你站上巨人的肩膀</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>生而有涯，學也無涯。既然生命無常，那麼，該如何在有限的時間內學習？洪蘭老師強調：唯有透過閱讀，才能用有限的生命學習無限的知識。</p>
+
+                    <p>美國的航空英雄林白於1927年開飛機跨越大西洋，但在不到50年後的1969年，阿姆斯壯便登上了月球。當時正在美國唸書的洪蘭老師，在活動會場看見了林白，也目睹「人類的一大步」踏上月球的那一刻。對於短短50年間科學的大躍進感到非常震撼的她回憶著說：「在那當下，我看到了人類從不會飛行，到能登陸月球；我真的感受到了透過閱讀傳播知識的力量，也瞭解到原來『站在巨人的肩膀看世界』的真正涵義。」作者窮一生之力寫了一本書，我們只需短短的幾週讀完，從此便能看得更高、更遠了。</p>
+
+                    <h4>閱讀，可以培養孩子的道德感與同理心</h4>
+                    <p>閱讀除了能讓我們看得更高、更遠，還能防止大腦老化、培養創造力與同理心。洪蘭老師以兒子為例，暢談了兒子在閱讀後的種種改變。</p>
+
+                    <p>美國學校的學生社會科一學期要讀4本書，到了高中畢業，宗教和種族相關的社會科經典便讀了24本書，這是對同理心很好的訓練。</p>
+
+                    <p>在美國，有色人種都有各種充滿歧視意味的稱號。當學生說了不雅的歧視話語時，一般老師雖然會叫他們「用肥皂洗嘴巴」以示懲罰，但是卻成效不彰。而洪蘭老師的兒子在八年級時讀了《梅岡城的故事》（To Kill A Mockingbird）、《奴隸船》（The Slave Ship: A Human History），和《湯姆叔叔的小屋》（Uncle Tom's Cabin）後，卻有了很大的改變。</p>
+
+                    <p>有一天，洪蘭老師的兒子問她：「媽媽，白人和黑人在基因上差多少？」她說：「0.1%。為什麼這樣問呢？」這時，她兒子正讀到《奴隸船》書中主角被酋長出賣的段落，他不明白主角這麼信任酋長，為何酋長還要出賣他？洪蘭老師回答說：「只有最親近的人，才會知道你的弱點。」這就是為什麼我們要告訴孩子「不要出賣別人」，因為一旦被最親近的人出賣時，傷害是很深的。而這也是閱讀的好處，因為一邊看書，可以一邊教孩子從同理心去學會倫理道德。</p>
+
+                    <p>在《奴隸船》中，有段情節談到奴隸船突然遇到颱風，大家決定棄船逃生，但是有位白人小女孩覺得不能沒有給黑奴逃生的機會，於是偷了鑰匙潛入船艙下，把還不知道即將遭遇船難的黑奴腳銬一一解開，讓他們得以逃生。洪蘭老師的兒子在閱讀到這個段落時，因為很有感觸，所以一直來問洪蘭老師問題。</p>
+
+                    <p>她發現兒子在看了這些書後，不會再用帶有歧視的語言了，因為他知道這是不對的事。尤其是在閱讀《人鼠之間》（Of Mice and Men）之後。這是一本關於智障者，無法在人心險惡的社會上存活的故事。在故事的最後，智障孩子的好朋友因為不忍心看到他被警察抓去折磨，因此只好忍痛將他悶死，讓他早點脫離黑暗的社會。這本書更引發了實際的行動。</p>
+
+                    <p>有一天，洪老師收到了一張兒子的曠課通知單。一問之下，才知道原來是前些時候兒子看見喜憨兒遭社區居民排擠的新聞，發現故事中的不平等也存在生活中，於是，他和同學拿著五千塊的園遊會糕點經費，捨棄學校旁邊的知名糕餅店不買，午休時間坐公車千里迢迢到「喜憨兒烘培屋」購買糕餅。但沒料到公車繞了一大圈，所以因回校逾時而被記了曠課。洪蘭老師知道原委，既驚喜又感動，因為她明白即使日後有不公不義的事發生，兒子也會挺身而出，而且盡一己之力去改變它。</p>
+
+                    <h4>用合適的方式，將孩子引進閱讀的門</h4>
+                    <p>每個孩子都是獨特的，閱讀的方式也要隨著孩子的天性而有所不同，比如像女孩多半喜歡童話類的故事，而男孩則大多喜歡實作的活動。同樣是《蒼蠅王》（The Lord of Flies），女孩可以交出兩張洋洋灑灑，充滿憐憫心的心得報告，男孩則交出短短幾行字。因此，在引發男、女孩的學習動機時，一定要隨著偏好而因材施教。</p>
+
+                    <p>洪蘭老師分享了兒子的例子說：「我兒子小時候不聽童話故事的，因為他覺得那都是虛構的。九年級的時候，老師因暸解孩子的性別差異而因材施教，因此他請女孩寫讀書心得，請男孩做島的模型。兒子很高興不用看書寫心得報告，不過事實上，為了把島的正確座標和方位定出來，他和組員足足把小島的書前前後後看了三遍，才完成島的模型，但是他卻自始至終認為老師對男生比較好，沒有要他們寫讀書心得報告。」這就是引起學習與閱讀動機的好例子 。</p>
+
+                    <h4>閱讀時，請讓孩子專心</h4>
+                    <p>當孩子閱讀時，需要動用到視覺皮質、聽覺皮質與前腦的共同運作。洪蘭老師舉例說明：「看到“CAT”三個字母，首先“C”傳到視覺皮質，到了聽覺皮質變成/k/的音，接著便放到工作記憶裡；同樣的，“A”和“T”也是以此類推。之後，將這三個字母組合在一起，我們就知道是唸成/kæt/，便知道是『貓』的意思。」</p>
+
+                    <p>因為閱讀牽涉到工作記憶，因此，閱讀時若旁邊有其他的聲音刺激，閱讀行為便會受到干擾。所以洪蘭老師也特別提醒爸媽，當孩子在看書時，絕對不要在旁邊看電視或說話，因為這些行為都會干擾到孩子。</p>
+
+                    <p>聽洪蘭老師演講，台下所有的聽眾總是覺得時間太短，但心裡和腦袋裡其實早已裝得滿滿的。看來高深的腦科學實驗，經過洪蘭老師的說明引用，全都變得可親易懂，一個個的育兒生活案例，也讓爸媽更清楚明白，教養孩子應該有更好的作法，為人父母也能有更多信心！</p>
+                     
+                   
+                    <p>文章來源：http://parent.kimy.com.tw/new/article.aspx?id=4451</p>
+                    <p>文章作者：洪蘭教授</p><br>
+                </div>
+
+                <div class="modal-footer text-left">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $("#loading").fadeOut(3000, function () {
+                $("#content").fadeIn();
+                $("#footer").fadeIn();
+            })
+        })
+
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
